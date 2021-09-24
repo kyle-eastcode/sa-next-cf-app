@@ -3,6 +3,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
+const candlesJPG = `https://storage.googleapis.com/kylehensman-com-images/candles.jpg?q=70`
+
 const Home: NextPage = () => {
   return (
     <div className={styles.container}>
@@ -16,6 +18,13 @@ const Home: NextPage = () => {
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
+
+        <Image
+          src={candlesJPG}
+          alt="Picture of the candles"
+          width={500}
+          height={500}
+        />
 
         <p className={styles.description}>
           Get started by editing{' '}
